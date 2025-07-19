@@ -13,8 +13,7 @@ wheels/
 *.zip
 
 # corpus
-corpus/
-corpus2/
+Corpora/
 target_corpora/
 paper/
 original.zip
