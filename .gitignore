@@ -9,12 +9,19 @@ wheels/
 # Virtual environments
 .venv
 
+#.zip files
+*.zip
+
 # corpus
 corpus/
+corpus2/
+target_corpora/
+paper/
 original.zip
 csat_listening_article.xlsx
 csat_reading_article.xlsx
 english_textbook_article.xlsx
+corpus_contraction_removed.zip
 
 # cache
 .DS_Store
