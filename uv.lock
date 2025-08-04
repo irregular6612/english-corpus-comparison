@@ -368,6 +368,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "contractions" },
+    { name = "enchant" },
     { name = "ipykernel" },
     { name = "levenshtein" },
     { name = "nltk" },
@@ -375,6 +376,7 @@ dependencies = [
     { name = "openpyxl" },
     { name = "pandas" },
     { name = "pip" },
+    { name = "pyenchant" },
     { name = "scikit-learn" },
     { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "scipy", version = "1.16.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -386,6 +388,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "contractions", specifier = ">=0.1.73" },
+    { name = "enchant", specifier = ">=0.0.1" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "levenshtein", specifier = ">=0.27.1" },
     { name = "nltk", specifier = ">=3.9.1" },
@@ -393,6 +396,7 @@ requires-dist = [
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "pip", specifier = ">=25.1.1" },
+    { name = "pyenchant", specifier = ">=3.2.2" },
     { name = "scikit-learn", specifier = ">=1.7.0" },
     { name = "scipy", specifier = ">=1.15.3" },
     { name = "seaborn", specifier = ">=0.13.2" },
@@ -477,6 +481,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/43/fa/6d96a0978d19e17b68d634497769987b16c8f4cd0a7a05048bec693caa6b/decorator-5.2.1.tar.gz", hash = "sha256:65f266143752f734b0a7cc83c46f4618af75b8c5911b00ccb61d0ac9b6da0360", size = 56711, upload-time = "2025-02-24T04:41:34.073Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4e/8c/f3147f5c4b73e7550fe5f9352eaa956ae838d5c51eb58e7a25b9f3e2643b/decorator-5.2.1-py3-none-any.whl", hash = "sha256:d316bb415a2d9e2d2b3abcc4084c6502fc09240e292cd76a76afc106a1c8e04a", size = 9190, upload-time = "2025-02-24T04:41:32.565Z" },
+]
+
+[[package]]
+name = "enchant"
+version = "0.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/63/b3708cb7a173831fd92ff14992489d7e4c1bddda90b20a8fe457a1fbdd9c/enchant-0.0.1.tar.gz", hash = "sha256:d690fb6b709f6bfbf5ffa533226ced29050f99e4d3890eef957595753bc1e24d", size = 1780, upload-time = "2023-02-12T14:27:55.249Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bb/ea/b7449b0d69361836ed68d0863374c27e395243fd1dbdd5587e62c479535c/enchant-0.0.1-py3-none-any.whl", hash = "sha256:ce4af8ff70495a12aac4b130f9ea3328ca5d9489c328ce948aef5e583905fa4d", size = 2423, upload-time = "2023-02-12T14:27:53.844Z" },
 ]
 
 [[package]]
@@ -1626,6 +1639,17 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/b8/e9/1f7efbe20d0b2b10f6718944b5d8ece9152390904f29a78e68d4e7961159/pydantic_core-2.33.2-pp311-pypy311_pp73-musllinux_1_1_armv7l.whl", hash = "sha256:de4b83bb311557e439b9e186f733f6c645b9417c84e2eb8203f3f820a4b988bf", size = 2239013, upload-time = "2025-04-23T18:33:26.621Z" },
     { url = "https://files.pythonhosted.org/packages/3c/b2/5309c905a93811524a49b4e031e9851a6b00ff0fb668794472ea7746b448/pydantic_core-2.33.2-pp311-pypy311_pp73-musllinux_1_1_x86_64.whl", hash = "sha256:82f68293f055f51b51ea42fafc74b6aad03e70e191799430b90c13d643059ebb", size = 2238715, upload-time = "2025-04-23T18:33:28.656Z" },
     { url = "https://files.pythonhosted.org/packages/32/56/8a7ca5d2cd2cda1d245d34b1c9a942920a718082ae8e54e5f3e5a58b7add/pydantic_core-2.33.2-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:329467cecfb529c925cf2bbd4d60d2c509bc2fb52a20c1045bf09bb70971a9c1", size = 2066757, upload-time = "2025-04-23T18:33:30.645Z" },
+]
+
+[[package]]
+name = "pyenchant"
+version = "3.2.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b1/a3/86763b6350727ca81c8fcc5bb5bccee416e902e0085dc7a902c81233717e/pyenchant-3.2.2.tar.gz", hash = "sha256:1cf830c6614362a78aab78d50eaf7c6c93831369c52e1bb64ffae1df0341e637", size = 49580, upload-time = "2021-10-05T17:25:25.553Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/54/4c/a741dddab6ad96f257d90cb4d23067ffadac526c9cab3a99ca6ce3c05477/pyenchant-3.2.2-py3-none-any.whl", hash = "sha256:5facc821ece957208a81423af7d6ec7810dad29697cb0d77aae81e4e11c8e5a6", size = 55660, upload-time = "2021-10-05T17:25:19.548Z" },
+    { url = "https://files.pythonhosted.org/packages/01/44/1e9a273d230abf5c961750a75e42b449adfb61eb446f80b6523955d2a4a2/pyenchant-3.2.2-py3-none-win32.whl", hash = "sha256:5a636832987eaf26efe971968f4d1b78e81f62bca2bde0a9da210c7de43c3bce", size = 11884084, upload-time = "2021-10-05T17:25:23.844Z" },
+    { url = "https://files.pythonhosted.org/packages/49/96/2087455de16b08e86fa7ce70b53ddac5fcc040c899d9ebad507a0efec52d/pyenchant-3.2.2-py3-none-win_amd64.whl", hash = "sha256:6153f521852e23a5add923dbacfbf4bebbb8d70c4e4bad609a8e0f9faeb915d1", size = 11890882, upload-time = "2021-10-05T17:25:17.013Z" },
 ]
 
 [[package]]
