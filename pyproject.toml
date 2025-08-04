@@ -6,7 +6,6 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "contractions>=0.1.73",
-    "enchant>=0.0.1",
     "ipykernel>=6.29.5",
     "levenshtein>=0.27.1",
     "nltk>=3.9.1",
