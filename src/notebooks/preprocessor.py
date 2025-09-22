@@ -243,7 +243,6 @@ class TargetCorpusPreprocessor:
         self.df = df.copy()
         self.col_name = df.columns
     
-    
     def remove_hash(self, col_name: str) -> pd.DataFrame:
         for idx, value in enumerate(self.df[col_name]):
             if '#' in value:
